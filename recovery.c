@@ -815,14 +815,14 @@ int install_zip(const char* packagefilepath) {
 void
 wipe_data(int confirm) {
     const char* headers[] = {
-        "Wipe all user data ?",
+        "擦除所有用户数据 ?",
         "   data | cache | datadata",
         "   sd-ext| android_secure",
         "",
         NULL
     };
 
-    if (confirm && !confirm_with_headers(headers, "Yes - Wipe all user data")) {
+    if (confirm && !confirm_with_headers(headers, "是的 - 擦除所有用户数据")) {
         return;
     }
 
@@ -1203,7 +1203,7 @@ main(int argc, char **argv) {
     ui_print(EXPAND(RECOVERY_MOD_VERSION_BUILD) "\n");
     ui_print("ClockworkMod " EXPAND(CWM_BASE_VERSION) "\n");
     ui_print("机型 中国移动M812C\n");
-    ui_print("狐狸也糊涂 编译(20150105)\n");
+    ui_print("狐狸也糊涂 编译(20150109)\n");
     ui_print("微博 http://weibo.com/7170884\n");
     LOGI("Device target: " EXPAND(TARGET_COMMON_NAME) "\n");
 #ifdef PHILZ_TOUCH_RECOVERY
